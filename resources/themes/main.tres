@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=14 format=2]
+
+[ext_resource path="res://resources/fonts/MochiyPopPOne/MochiyPopPOneRegular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.152941, 0.152941, 0.152941, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.129412, 0.129412, 0.129412, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.054902, 0.0509804, 0.0509804, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.8, 0.8, 0.8, 1 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.129412, 0.129412, 0.129412, 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 56
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxFlat" id=11]
+
+[sub_resource type="StyleBoxFlat" id=12]
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[sub_resource type="StyleBoxFlat" id=7]
+
+[resource]
+Button/styles/disabled = SubResource( 8 )
+Button/styles/focus = SubResource( 3 )
+Button/styles/hover = SubResource( 4 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 5 )
+LineEdit/colors/font_color = Color( 0, 0, 0, 1 )
+LineEdit/styles/normal = SubResource( 2 )
+PanelContainer/styles/panel = SubResource( 1 )
+TabContainer/fonts/font = SubResource( 10 )
+TabContainer/styles/panel = SubResource( 9 )
+TabContainer/styles/tab_bg = SubResource( 11 )
+TabContainer/styles/tab_fg = SubResource( 12 )
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/decrement_pressed = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/icons/increment_pressed = null
+VScrollBar/styles/grabber = SubResource( 6 )
+VScrollBar/styles/scroll = SubResource( 7 )

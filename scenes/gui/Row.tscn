@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/fonts/MochiyPopPOne/MochiyPopPOneRegular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://resources/themes/main.tres" type="Theme" id=3]
+[ext_resource path="res://scripts/gui/row.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.839216, 0.839216, 0.839216, 1 )
+
+[node name="Row" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 0.074
+margin_bottom = 0.0800018
+rect_min_size = Vector2( 0, 80 )
+size_flags_horizontal = 3
+custom_constants/separation = 0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+margin_right = 80.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 80, 80 )
+theme = ExtResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = ">"
+
+[node name="Pause" type="Button" parent="."]
+margin_left = 80.0
+margin_right = 160.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 80, 80 )
+theme = ExtResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "II"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 160.0
+margin_right = 640.0
+margin_bottom = 80.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+custom_styles/normal = SubResource( 5 )
+text = "Hijacked"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Flip" type="Button" parent="."]
+margin_left = 640.0
+margin_right = 720.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 80, 80 )
+theme = ExtResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "^"
